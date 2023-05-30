@@ -8,6 +8,7 @@ With it, developers can easily config verification parameters based on IDs or on
 
 <b>Ultimately, WalliD can be used for sybil resistence, compliance, trust scores, gated access and much more </b> 
 
+![image](https://github.com/walliDprotocol/celo-demo/assets/39834004/70b15199-6742-48ba-8ac3-78488366c51f)
 
 ## What we're building during Celo Camp?
 
