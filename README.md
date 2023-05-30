@@ -30,8 +30,7 @@ During the camp WalliD is developing the libs and the modal to connect users' wa
 
 
 ## Launch Verification modal in your development environment
-
-You can also integrate and launch the verification modal in your own environment to create customized verification flows.
+> You can also integrate and launch the verification modal in your own environment to create customized verification flows.
 
 ### Build and deploy
 
