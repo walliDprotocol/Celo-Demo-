@@ -34,9 +34,9 @@ During the camp WalliD is developing the libs and the modal to connect users' wa
 
 ### Build and deploy
 
-To utilize it within a development environment, the implementation involves employing the `dotenv` module, which allows for the utilization of a .env file to incorporate the subsequent environment variables.
+To utilize it within a development environment, the implementation involves employing the `dotenv` module, which allows for the utilization of a `.env` file to incorporate the subsequent environment variables.
 
- Here's an example of how the .env file with variables
+Here's an example of the `.env` file:
 
 ```
 VUE_APP_BACKEND_URL=<backend_url>
@@ -52,19 +52,19 @@ VUE_APP_PUBLISH_KEY=<PUBLISH_KEY>
 ```
 
 
-Install depencies
+### Install depencies
 
 ```
 npm install
 ```
 
-build frontend
+### build frontend
 
 ```
 npm run generate
 ```
 
-run frontend
+### run frontend
 
 ```
 npm run start
