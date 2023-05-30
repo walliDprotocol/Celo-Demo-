@@ -3,7 +3,7 @@
 
 ## About the project
 
-WalliD is a verification toolkit that makes it easy for CELO developers to customize and add seamless verification flows in their dApps based on Celo network assets (ERC-20s, NFTs, SBTs), Social IDs, Government IDs and We3 IDs.
+WalliD is a verification toolkit that makes it easy for CELO developers to customize and add seamless verification flows to their dApps based on Celo network assets (ERC-20s, NFTs, SBTs), Social IDs, Government IDs and We3 IDs.
 With it, developers can easily config verification parameters based on IDs or on-chain data and add a seamless flow to their frontends that supports those verifications, while keeping users' privacy.
 
 <b>Ultimately, WalliD can be used for sybil resistence, compliance, trust scores, gated access and much more </b> 
