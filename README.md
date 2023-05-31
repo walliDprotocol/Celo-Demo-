@@ -14,19 +14,19 @@ With it, developers can easily config verification parameters based on IDs or on
 
 During the camp WalliD is developing the libs and the modal to connect users' wallets and verify digital IDs and Celo assets' ownership.
 
-- Add Celo RPC, ecossystem wallets and token standards to our aggregator to make them avaiable in verification configs (check our core-config repo)
-- Create Libraries to support the integration of the verification Modal in clients' systems
-- Develop Frontend code of the Modal with default WalliD UI
+- Add Celo RPC, ecossystem wallets and token standards to our aggregator to make them avaiable in verification configs (check our [`core-config`](https://github.com/walliDprotocol/core-config) repo).
+- Create Libraries to support the integration of the verification Modal in clients' systems.
+- Develop Frontend code of the Modal with default WalliD UI.
 
 
 ## How to test it
 
 >The demo website is currently using a default config created by WalliD team. You can create try different config parameters in this repo.
 
- 1. Launch demo website [here](https://wallid-demo-celo.herokuapp.com/) that simulates a dApp using WalliD verification tool;
+ 1. Launch demo website [here](https://wallid-demo-celo.herokuapp.com/) that simulates a dApp using WalliD verification tool.
  2. Click `WalliD connector`to launch WalliD verification Modal.
- 3. Select one of the data sources available
- 4. Complete the verification process for each data source selected
+ 3. Select one of the data sources available.
+ 4. Complete the verification process for each data source selected.
 
 
 
