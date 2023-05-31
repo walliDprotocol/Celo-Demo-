@@ -1,4 +1,4 @@
-# User data Verification tool for CELO
+# User data verification tool for CELO
 > This repo contains the code developed during Celo Camp Batch 7. 
 
 ## About the project
