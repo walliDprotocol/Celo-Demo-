@@ -46,7 +46,8 @@ VUE_APP_NEAR_SOCIAL_CONTRACT=<social_contract>
 VUE_APP_NEAR_NETWORK_TESTNET=testnet
 VUE_APP_NEAR_NETWORK=mainnet
 
-# pubnub env vars
+
+pubnub env vars:
 VUE_APP_PUBNUB_USER_ID=<pubnub_id>
 VUE_APP_PUBNUB_SUBSCRIBE_KEY=<PUBNUB_SUBSCRIBE_KEY>
 VUE_APP_PUBLISH_KEY=<PUBLISH_KEY>
@@ -77,7 +78,7 @@ npm run start
 BACKEND_URL=<backend_url>
 DISCORD_AUTH=<redirect discord url>
 DISCORD_GUILD_ID=<discord_server id>
-TWITTER_ACCOUNT=<username of account to check follow>
-TWITTER_ACCOUNT_ID=<account id of account to check follow>
+TWITTER_ACCOUNT=<username of account to check nr of followers>
+TWITTER_ACCOUNT_ID=<account id of account to check number of followers>
 TWITTER_POST_ID=<post id>
 ```
