@@ -41,11 +41,6 @@ Here's an example of the `.env` file:
 
 ```
 VUE_APP_BACKEND_URL=<backend_url>
-VUE_APP_NEAR_SOCIAL_CONTRACT_TESTNET=<contract_address>
-VUE_APP_NEAR_SOCIAL_CONTRACT=<social_contract>
-VUE_APP_NEAR_NETWORK_TESTNET=testnet
-VUE_APP_NEAR_NETWORK=mainnet
-
 
 pubnub env vars:
 VUE_APP_PUBNUB_USER_ID=<pubnub_id>
