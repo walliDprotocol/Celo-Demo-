@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-row justify="center" align="center">
+  <v-container class="wallidao" @click="openWalliDIframe">
+    <v-row v-if="false" justify="center" align="center">
       <!-- <Iframe v-if="showIframe" :iframeUrl="iframeUrlSessionId"> </Iframe> -->
 
       <v-col cols="12" sm="8" md="8" class="text-center">
@@ -41,7 +41,7 @@ var pubnub = new PubNub({
 
 console.log("BACKEND URL ", process.env.BACKEND_URL);
 
-const IFRAME_URL = process.env.IFRAME_URL;
+const IFRAME_URL = process.env.IFRAME_URL; //"http://localhost:8080"; //
 const TWITTER_LOGIN =
   process.env.BACKEND_URL + "/api/v1/redirect/login/twitter";
 const TWITTER_INFO = process.env.BACKEND_URL + "/api/v1/redirect/twitter";
@@ -55,14 +55,16 @@ const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID;
 const TWITTER_ACCOUNT_ID = process.env.TWITTER_ACCOUNT_ID;
 const TWITTER_POST_ID = process.env.TWITTER_POST_ID || "1499189957717463043";
 const TWITTER_ACCOUNT = process.env.TWITTER_ACCOUNT;
-
+let popup;
 export default {
   components: {
     Iframe,
   },
+  layout: "empty",
   data() {
     return {
       oauthData: { facebook: {}, linkedin: {} },
+      popup: null,
       sessionID: 0,
       showIframe: false,
       itsHover: false,
@@ -152,9 +154,14 @@ export default {
 
     pubnub.addListener({
       message: (receivedMessage) => {
-        // handle message
         console.log("The message text is: ", receivedMessage.message);
         console.log("Sent by: ", receivedMessage.publisher);
+        // handle message
+        if (receivedMessage?.message?.event == "close-iframe") {
+          console.log("event is: ", receivedMessage?.message?.event);
+
+          console.log(popup.close());
+        }
         this.oauthData = receivedMessage.message;
         this.showIframe = false;
       },
@@ -166,14 +173,19 @@ export default {
   methods: {
     openWalliDIframe() {
       // this.showIframe = true;
-      this.iframeUrlSessionId = IFRAME_URL + "?uuid=" + this.sessionID;
+      // this.iframeUrlSessionId = IFRAME_URL + "?uuid=" + this.sessionID;
 
-      const popup = window.open(
-        this.iframeUrlSessionId,
+      const iframeUrl = new URL(IFRAME_URL);
+      iframeUrl.searchParams.set("uuid", this.sessionID);
+      iframeUrl.searchParams.set("flow", "celo");
+      iframeUrl.searchParams.set("configId", "64775dbe48818915e2a8bda3");
+      popup = window.open(
+        iframeUrl,
         // "http://localhost:8080",
         "popup",
         "width=900,height=640,toolbar=no,menubar=no"
       );
+      console.log("  this.popup id : ", popup);
     },
     checkApplyButtonStatus() {
       let checkStatus = false;
@@ -439,3 +451,14 @@ export default {
   },
 }; //export body
 </script>
+<style>
+.wallidao {
+  width: 100vw;
+  max-width: unset;
+  height: 100vh;
+  background: url("@/assets/WalliD DAO Landing Page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+</style>
