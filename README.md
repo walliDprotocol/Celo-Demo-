@@ -23,7 +23,7 @@ During the camp WalliD is developing the libs and the modal to connect users' wa
 
 > The demo website is currently using a default config created by WalliD team. You can create try different config parameters in this repo.
 
-1.  Launch demo website [here](https://wallid-demo-celo.herokuapp.com/) that simulates a Celo dApp using WalliD verification tool.
+1.  Launch demo website [here](https://wallid-demo-celo.herokuapp.com/?configId=64775dbe48818915e2a8bda3) that simulates a Celo dApp using WalliD verification tool.
 2.  Click `WalliD connector`to launch WalliD verification Modal.
 3.  Select one of the data sources available.
 4.  Complete the verification process for each data source selected.
