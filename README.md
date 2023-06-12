@@ -11,13 +11,13 @@ With it, developers can easily config verification parameters based on IDs or on
 
 ![image](https://github.com/walliDprotocol/celo-demo/assets/39834004/70b15199-6742-48ba-8ac3-78488366c51f)
 
-## What we're building during Celo Camp?
+## What we built during Celo Camp?
 
-During the camp WalliD is developing the libs and the modal to connect users' wallets and verify digital IDs and Celo assets' ownership.
+During the camp WalliD developed the libs and the iframe to connect users' wallets and verify digital IDs and Celo assets' ownership.
 
 - Add Celo RPC, ecossystem wallets and token standards to our aggregator to make them avaiable in verification configs (check our [`core-config`](https://github.com/walliDprotocol/core-config) repo).
 - Create Libraries to support the integration of the verification Modal in clients' systems.
-- Develop Frontend code of the Modal with default WalliD UI.
+- Develop Frontend code of the iframe with default WalliD UI.
 
 ## How to test it
 
