@@ -23,10 +23,10 @@ During the camp WalliD developed the libs and the iframe to connect users' walle
 
 > The demo website is currently using a default config created by WalliD team. You can create try different config parameters in this repo.
 
-1.  Launch demo website [here](https://wallid-demo-celo.herokuapp.com/?configId=64775dbe48818915e2a8bda3) that simulates a Celo dApp using WalliD verification tool.
-2.  Click `WalliD connector`to launch WalliD verification iframe.
-3.  Select one of the data sources available.
-4.  Complete the verification process for each data source selected.
+1. Launch demo website [here](https://wallid-demo-celo.herokuapp.com/) that simulates a dApp using WalliD verification tool for their users.
+2. Click on “claim now” button to launch WalliD verification Modal.
+3. At the first step, connect to the twitter to verify account;
+4. And at the last step, connect to Metamask wallet account to verify your tokens ownership. Select Metamask wallet and accept the connection request. You will be asked to change to “Alfajores network”. Please make sure that you own some tokens, otherwise you won’t be able to finish the process.
 
 ## Launch Verification modal in your development environment
 
